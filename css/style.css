@@ -1,0 +1,55 @@
+
+/* Root Variables */
+:root {
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--light-grayish-violet);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3.75rem;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+form {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.grid-1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+}
+
+.grid-2 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.grid-3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
