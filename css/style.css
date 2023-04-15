@@ -27,29 +27,67 @@ body {
     padding-bottom: 3.75rem;
 }
 
-p {
-    text-transform: uppercase;
-}
-
 form {
     background-color: var(--white);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
     gap: 0.5rem;
+    border-radius: 0.313rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 1.25rem;
+    width: 37.5rem;
+}
+
+.container form .inputbox {
+    margin-top: 1.25rem;
+}
+
+p {
+    display: block;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 60%);
+    padding-bottom: 0.313rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    border: 1.5px solid rgba(0, 0, 0, 0.3);
+    color: hsl(0, 0%, 27%);
 }
 
 .grid-1 {
+    display: flex;
+    flex-direction: column;
     grid-column: 1 / 4;
     grid-row: 1 / 4;
 }
 
 .grid-2 {
+    display: flex;
+    flex-direction: column;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
 }
 
 .grid-3 {
-    grid-column: 1 / 2;
+    grid-column: 1 / 4;
     grid-row: 3 / 4;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.flexbox .inputbox {
+    flex: 1 1 150px;
+}
+
+.submit-btn {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
 }
