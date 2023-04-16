@@ -4,6 +4,8 @@
     /* Neutral Colors */
     --white: hsl(0, 0%, 100%);
     --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-blue: rgb(0, 37, 245);
+    --light-turquoise-blue: rgb(97, 212, 250);
 }
 
 /* Reset */
@@ -43,7 +45,7 @@ form {
     margin-top: 1.25rem;
 }
 
-p {
+form p {
     display: block;
     text-transform: uppercase;
     color: hsl(0, 0%, 60%);
@@ -56,6 +58,11 @@ input, select {
     border-radius: 0.625rem;
     border: 1.5px solid rgba(0, 0, 0, 0.3);
     color: hsl(0, 0%, 27%);
+}
+
+select, option {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 60%);
 }
 
 .grid-1 {
@@ -84,10 +91,21 @@ input, select {
 }
 
 .flexbox .inputbox {
-    flex: 1 1 150px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px;
 }
 
 .submit-btn {
     grid-column: 1 / 4;
     grid-row: 4 / 5;
+    text-transform: uppercase;
+    color: var(--white);
+    background-image: linear-gradient(to right, rgb(0, 37, 245), rgb(97, 212, 250));
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+
 }
