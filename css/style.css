@@ -109,3 +109,77 @@ select, option {
 .submit-btn:hover {
 
 }
+
+/* Card Container */
+.card-container {
+    position: relative;
+    height: 250px;
+    width: 400px;
+    bottom: -20px;
+}
+
+/* Card Front */
+.card-front {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background-image: linear-gradient(to right, rgb(0, 37, 245), rgb(97, 212, 250));
+    border-radius: 10px;
+    backface-visibility: hidden;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.card-front p {
+    color: var(--white);
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0px 0px 0px;
+}
+
+.images img:first-child {
+    transform: scale(0.5);
+}
+.images img:last-child {
+    transform: scale(0.4);
+}
+
+.card-number-display {
+    padding: 0px 0px 0px 20px;
+}
+.card-number-display p {
+    font-size: 22px;
+}
+
+.user-details-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px 0px 20px;
+}
+
+.cardholder-name-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-input {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Back */
+
+.card-back {
+
+}
+
