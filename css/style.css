@@ -132,24 +132,26 @@ select, option {
     border-radius: 10px;
     backface-visibility: hidden;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
-    display: none;
+    transform: perspective(500px) rotateY(0deg);
+    transition: 0.7s ease-out;
+    /* display: none; */
 }
 
 .card-front p {
     color: var(--white);
 }
 
-.images {
+.front-images {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 0px 0px 0px;
 }
 
-.images img:first-child {
+.front-images img:first-child {
     transform: scale(0.5);
 }
-.images img:last-child {
+.front-images img:last-child {
     transform: scale(0.4);
 }
 
@@ -178,8 +180,58 @@ select, option {
 }
 
 /* Card Back */
-
 .card-back {
-
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* padding: 5px; */
+    background-image: linear-gradient(to right, rgb(0, 37, 245), rgb(97, 212, 250));
+    border-radius: 10px;
+    backface-visibility: hidden;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    transform: perspective(500px) rotateY(90deg);
+    transition: 0.7s ease-out;
+    /* display: none; */
 }
 
+.box-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 20px;
+}
+
+.card-back p {
+    color: var(--white);
+    position: relative;
+    right: 30px;
+}
+
+.card-back .back-images {
+    transform: scale(0.4);
+}
+
+.back-images img {
+    position: relative;
+    left: 80px
+}
+
+.magnetic-stripe {
+    width: 400px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+
+.white-box {
+    width: 300px;
+    height: 50px;
+    background-color: var(--white);
+    border-radius: 5px;
+    align-self: center;
+}
