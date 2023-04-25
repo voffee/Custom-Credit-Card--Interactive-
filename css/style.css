@@ -252,3 +252,47 @@ select, option {
 .card-container:hover .card-back {
     transform: perspective(500px) rotateY(0deg);
   }
+
+  /* Media Queries */
+@media only screen and (max-width: 414px) {
+    
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 0.5fr;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .grid-1 {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 1;
+        grid-row: 1 / 4;
+    }
+    
+    .grid-2 {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+    }
+    
+    .grid-3 {
+        grid-column: 1 / 1;
+        grid-row: 3 / 4;
+    }
+    
+    .submit-btn {
+        grid-column: 1 / 1;
+        grid-row: 4 / 5;
+        text-transform: uppercase;
+        color: var(--white);
+        background-image: linear-gradient(to right, rgb(0, 37, 245), rgb(97, 212, 250));
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .flexbox {
+        gap: 5px;
+    }
+}
