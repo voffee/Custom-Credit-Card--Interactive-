@@ -7,7 +7,7 @@
     initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Custom Credit Card</title>
 </head>
@@ -27,16 +27,19 @@
                         <p>Card Holder</p>
                         <p>Full Name</p>
                     </div>
-                    <div class="date-input">
-                        <p>Expires</p>
-                        <p>MM YY</p>
+                    <div class="date-input-display">
+                        <p>Expiry</p>
+                        <div class="expiry-mm-yy">
+                            <p>MM</p>
+                            <p>YY</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card-back">
                 <div class="magnetic-stripe"></div>
                 <div class="box-items">
-                    <p>CVC</p>
+                    <p class="cvc-display">CVC</p>
                     <div class="white-box"></div>
                     <div class="back-images">
                         <img src="/img/visa.png" alt="">
@@ -112,7 +115,7 @@
                 </div>
                 <div class="inputbox">
                     <p>CVC</p>
-                    <input type="text" maxlength="4" class="cvc-input">
+                    <input type="text" maxlength="3" class="cvc-input">
                 </div>
             </div>
             <input type="submit" value="Submit" class="submit-btn">

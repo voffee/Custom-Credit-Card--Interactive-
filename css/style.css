@@ -174,9 +174,23 @@ select, option {
     flex-direction: column;
 }
 
-.date-input {
+.cardholder-name-display p:nth-child(1) {
+    font-weight: 700;
+}
+
+.date-input-display {
     display: flex;
     flex-direction: column;
+}
+
+.date-input-display p:nth-child(1) {
+    font-weight: 700;
+}
+
+.expiry-mm-yy {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 /* Card Back */
@@ -195,7 +209,7 @@ select, option {
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     transform: perspective(500px) rotateY(90deg);
     transition: 0.7s ease-out;
-    /* display: none; */
+    display: none;
 }
 
 .box-items {
