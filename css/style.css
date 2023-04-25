@@ -106,16 +106,13 @@ select, option {
     cursor: pointer;
 }
 
-.submit-btn:hover {
-
-}
-
 /* Card Container */
 .card-container {
     position: relative;
     height: 250px;
     width: 400px;
     bottom: -20px;
+    /* transform-style: preserve-3d; */
 }
 
 /* Card Front */
@@ -133,7 +130,7 @@ select, option {
     backface-visibility: hidden;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     transform: perspective(500px) rotateY(0deg);
-    transition: 0.7s ease-out;
+    transition: 0.5s ease-out;
     /* display: none; */
 }
 
@@ -208,8 +205,8 @@ select, option {
     backface-visibility: hidden;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     transform: perspective(500px) rotateY(90deg);
-    transition: 0.7s ease-out;
-    display: none;
+    transition: 0.5s ease-out;
+    /* display: none; */
 }
 
 .box-items {
@@ -249,3 +246,9 @@ select, option {
     border-radius: 5px;
     align-self: center;
 }
+
+/* Animation Trigger */
+
+.card-container:hover .card-back {
+    transform: perspective(500px) rotateY(0deg);
+  }

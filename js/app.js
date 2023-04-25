@@ -15,6 +15,10 @@ const yearInputDisplay = document.querySelector('.expiry-mm-yy p:nth-child(2)');
 const cvcInput = document.querySelector('.cvc-input');
 const cvcDisplay = document.querySelector('.cvc-display');
 
+const mouseTrigger = document.querySelector('.card-container');
+const cardFront = document.querySelector('.card-front');
+const cardBack = document.querySelector('.card-back');
+
 // Add event listeners
 // Cardholder name input display
 cardholderNameInput.addEventListener('input', () => {
